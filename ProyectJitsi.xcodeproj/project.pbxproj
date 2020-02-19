@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		4011CAF523FBEEFE005CFAAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4011CAF423FBEEFE005CFAAE /* Main.storyboard */; };
 		4011CAF723FBEF40005CFAAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011CAF623FBEF40005CFAAE /* ViewController.swift */; };
+		4011CAF923FBFEFA005CFAAE /* JitsiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011CAF823FBFEFA005CFAAE /* JitsiViewController.swift */; };
+		4011CAFB23FC0C89005CFAAE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011CAFA23FC0C89005CFAAE /* TableViewCell.swift */; };
+		4011CAFD23FC108D005CFAAE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011CAFC23FC108D005CFAAE /* Room.swift */; };
 		40B967C723FA8D55004CC0CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B967C623FA8D55004CC0CA /* AppDelegate.swift */; };
 		40B967C923FA8D55004CC0CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B967C823FA8D55004CC0CA /* SceneDelegate.swift */; };
-		40B967CB23FA8D55004CC0CA /* Conferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B967CA23FA8D55004CC0CA /* Conferences.swift */; };
-		40B967CE23FA8D55004CC0CA /* Conferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B967CC23FA8D55004CC0CA /* Conferences.storyboard */; };
 		40B967D023FA8D5A004CC0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B967CF23FA8D5A004CC0CA /* Assets.xcassets */; };
 		40B967D323FA8D5A004CC0CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B967D123FA8D5A004CC0CA /* LaunchScreen.storyboard */; };
 		40B967DE23FA8D5A004CC0CA /* ProyectJitsiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B967DD23FA8D5A004CC0CA /* ProyectJitsiTests.swift */; };
@@ -42,11 +43,12 @@
 		1ADFFC214600E9D5273363DD /* Pods_ProyectJitsi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectJitsi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4011CAF423FBEEFE005CFAAE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4011CAF623FBEF40005CFAAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4011CAF823FBFEFA005CFAAE /* JitsiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitsiViewController.swift; sourceTree = "<group>"; };
+		4011CAFA23FC0C89005CFAAE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4011CAFC23FC108D005CFAAE /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		40B967C323FA8D55004CC0CA /* ProyectJitsi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectJitsi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B967C623FA8D55004CC0CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40B967C823FA8D55004CC0CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40B967CA23FA8D55004CC0CA /* Conferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conferences.swift; sourceTree = "<group>"; };
-		40B967CD23FA8D55004CC0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Conferences.storyboard; sourceTree = "<group>"; };
 		40B967CF23FA8D5A004CC0CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40B967D223FA8D5A004CC0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40B967D423FA8D5A004CC0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,12 +114,13 @@
 			children = (
 				40B967C623FA8D55004CC0CA /* AppDelegate.swift */,
 				40B967C823FA8D55004CC0CA /* SceneDelegate.swift */,
-				40B967CA23FA8D55004CC0CA /* Conferences.swift */,
-				40B967CC23FA8D55004CC0CA /* Conferences.storyboard */,
 				40B967CF23FA8D5A004CC0CA /* Assets.xcassets */,
+				4011CAFC23FC108D005CFAAE /* Room.swift */,
 				40B967D123FA8D5A004CC0CA /* LaunchScreen.storyboard */,
 				4011CAF423FBEEFE005CFAAE /* Main.storyboard */,
 				4011CAF623FBEF40005CFAAE /* ViewController.swift */,
+				4011CAFA23FC0C89005CFAAE /* TableViewCell.swift */,
+				4011CAF823FBFEFA005CFAAE /* JitsiViewController.swift */,
 				40B967D423FA8D5A004CC0CA /* Info.plist */,
 			);
 			path = ProyectJitsi;
@@ -266,7 +269,6 @@
 			files = (
 				40B967D323FA8D5A004CC0CA /* LaunchScreen.storyboard in Resources */,
 				40B967D023FA8D5A004CC0CA /* Assets.xcassets in Resources */,
-				40B967CE23FA8D55004CC0CA /* Conferences.storyboard in Resources */,
 				4011CAF523FBEEFE005CFAAE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,9 +343,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B967CB23FA8D55004CC0CA /* Conferences.swift in Sources */,
 				40B967C723FA8D55004CC0CA /* AppDelegate.swift in Sources */,
 				4011CAF723FBEF40005CFAAE /* ViewController.swift in Sources */,
+				4011CAFD23FC108D005CFAAE /* Room.swift in Sources */,
+				4011CAFB23FC0C89005CFAAE /* TableViewCell.swift in Sources */,
+				4011CAF923FBFEFA005CFAAE /* JitsiViewController.swift in Sources */,
 				40B967C923FA8D55004CC0CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,14 +384,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		40B967CC23FA8D55004CC0CA /* Conferences.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40B967CD23FA8D55004CC0CA /* Base */,
-			);
-			name = Conferences.storyboard;
-			sourceTree = "<group>";
-		};
 		40B967D123FA8D5A004CC0CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -523,7 +519,7 @@
 				DEVELOPMENT_TEAM = EQM9Z72WNB;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ProyectJitsi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -531,7 +527,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = icooldesign.ProyectJitsi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -545,7 +541,7 @@
 				DEVELOPMENT_TEAM = EQM9Z72WNB;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ProyectJitsi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,7 +549,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = icooldesign.ProyectJitsi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
