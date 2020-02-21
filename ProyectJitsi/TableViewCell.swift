@@ -18,12 +18,21 @@ class TableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        BackgroundCell.roundBlue()
+        self.animationCell()
     }
-
+    
+    func animationCell() {
+        self.alpha = 0
+        UIView.animate(withDuration: 1, delay: 1, options: .curveEaseOut, animations: {
+            self.alpha = 1
+        }, completion: nil)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }

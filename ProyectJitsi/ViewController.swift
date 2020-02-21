@@ -19,9 +19,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnGoLive: UIButton!
     @IBOutlet weak var romsTableaView: UITableView!
     
-    let rooms:[Room] = []
+    var rooms:[Room] = [] {
+        didSet{
+            self.romsTableaView.reloadData()
+        }
+    }
     
     @IBAction func btnNewRoomAction(_ sender: Any) {
+        self.createRoom()
         
     }
     
@@ -32,20 +37,50 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboard()
         self.setUpView()
-        
+    }
+    
+    func createRoom () {
+        guard let nameRoom = textFieldRoom.text else { return }
+        dismissKeyboard()
+        if !nameRoom.isEmpty{
+            let room = Room(IDRoom: 1, TitleRoom: nameRoom)
+            rooms.append(room)
+        }
+        else{
+            //            TODO - Si la celda esta vacia
+        }
     }
     
     func setUpView(){
+        self.keyboard()
         self.delegates()
-        colorBackground.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-        logoImage.image = UIImage(named: "")
+        logoImage.image = UIImage(named: "logo")
+        logoImage.layer.cornerRadius = logoImage.frame.size.width/2
         titleLabel.text = "Crear nuevo Room"
+        textFieldRoom.roundBlue()
+        textFieldRoom.returnKeyType = UIReturnKeyType.done
+        btnGoLive.setTitle("Ir al evento", for: .normal)
+        btnGoLive.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        btnGoLive.backgroundColor = UIColor.systemBlue
+        btnGoLive.layer.cornerRadius = 5
+        self.romsTableaView.separatorStyle = .none
     }
     
     func delegates() {
         romsTableaView.delegate = self
         romsTableaView.dataSource = self
+        textFieldRoom.delegate = self
+    }
+    
+    func keyboard(){
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 
@@ -56,10 +91,25 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "HomeTableViewCell"
+        let cellIdentifier = "Cell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? TableViewCell else {
             fatalError("La celda no es una instancia de HomeCell")
         }
+        cell.nameRoom.text = rooms[indexPath.row].titleRoom
+        cell.backgroundColor = UIColor.clear
         return cell
     }
 }
+
+extension ViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldRoom.resignFirstResponder()
+        self.createRoom()
+        return true
+    }
+    
+}
+
+
+

@@ -12,6 +12,7 @@
 		4011CAF923FBFEFA005CFAAE /* JitsiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011CAF823FBFEFA005CFAAE /* JitsiViewController.swift */; };
 		4011CAFB23FC0C89005CFAAE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011CAFA23FC0C89005CFAAE /* TableViewCell.swift */; };
 		4011CAFD23FC108D005CFAAE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011CAFC23FC108D005CFAAE /* Room.swift */; };
+		4066BA3623FEA31800247E13 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4066BA3523FEA31800247E13 /* Extension.swift */; };
 		40B967C723FA8D55004CC0CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B967C623FA8D55004CC0CA /* AppDelegate.swift */; };
 		40B967C923FA8D55004CC0CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B967C823FA8D55004CC0CA /* SceneDelegate.swift */; };
 		40B967D023FA8D5A004CC0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B967CF23FA8D5A004CC0CA /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		4011CAF823FBFEFA005CFAAE /* JitsiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JitsiViewController.swift; sourceTree = "<group>"; };
 		4011CAFA23FC0C89005CFAAE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4011CAFC23FC108D005CFAAE /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		4066BA3523FEA31800247E13 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		40B967C323FA8D55004CC0CA /* ProyectJitsi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectJitsi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B967C623FA8D55004CC0CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40B967C823FA8D55004CC0CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				4011CAF623FBEF40005CFAAE /* ViewController.swift */,
 				4011CAFA23FC0C89005CFAAE /* TableViewCell.swift */,
 				4011CAF823FBFEFA005CFAAE /* JitsiViewController.swift */,
+				4066BA3523FEA31800247E13 /* Extension.swift */,
 				40B967D423FA8D5A004CC0CA /* Info.plist */,
 			);
 			path = ProyectJitsi;
@@ -348,6 +351,7 @@
 				4011CAFD23FC108D005CFAAE /* Room.swift in Sources */,
 				4011CAFB23FC0C89005CFAAE /* TableViewCell.swift in Sources */,
 				4011CAF923FBFEFA005CFAAE /* JitsiViewController.swift in Sources */,
+				4066BA3623FEA31800247E13 /* Extension.swift in Sources */,
 				40B967C923FA8D55004CC0CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,7 +523,7 @@
 				DEVELOPMENT_TEAM = EQM9Z72WNB;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ProyectJitsi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,7 +545,7 @@
 				DEVELOPMENT_TEAM = EQM9Z72WNB;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ProyectJitsi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

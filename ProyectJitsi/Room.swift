@@ -9,6 +9,11 @@
 import Foundation
 
 class Room {
-    private let  titleRoom:String? = nil
-    private let id:Int? = nil
+     var  titleRoom:String? = nil
+     var id:Int? = nil
+    
+    init(IDRoom idRoom:Int,TitleRoom titleRoom:String) {
+        self.id = idRoom
+        self.titleRoom = titleRoom
+    }
 }
